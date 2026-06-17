@@ -1,14 +1,12 @@
 #include "Base64.h"
 
-const String Base64::base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+String Base64::base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-bool Base64::isBase64(uint8_t c) {
-  return (isalnum(c) || (c == '+') || (c == '/'));
+bool Base64::isBase64(uint8_t c) ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+
 }
 
-String Base64::encode(const String &data) {
-  return encode(reinterpret_cast<const uint8_t*>(data.c_str()), data.length());
-}
+String Base64::encode(const String &data) {  returisalnum(c) || (c == '+') || (  return encode(reinterpret_cast<const uint8_t*>(data.c_str()), data.length());
 
 String Base64::encode(const uint8_t* bytes_to_encode, size_t len) {
   String ret;
